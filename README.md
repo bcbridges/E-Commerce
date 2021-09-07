@@ -24,7 +24,8 @@ This project was created to demonstrate utilizing API routes to manipulate data 
 
 ## Installation
 
-To install this application, clone the repository locally to your desktop. Within the repository, you will find the ['.env.EXAMPLE'](.env.EXAMPLE) file. Rename the file so that the .EXAMPLE part is removed and the file is just labeled '.env'. This file will hold your SQL credentials. In .env, fill in the DB_USER and DB_PW with the credentials of your local SQL user. To create the database for this application, create a new query within your SQL application, and execute the code located in the [db](./db/schema.sql) folder. This will create a new database named 'ecommerce_db'. To create the tables within the database and seed those tables with data, go to the cloned repositoy location within your terminal. Run the following commands 'npm run start' to create the tables and 'npm run seed' to seed the tabes. The application is now ready to receive API calls.
+To install this application, clone the repository locally to your desktop. Within the repository, you will find the ['.env.EXAMPLE'](.env.EXAMPLE) file. Rename the file so that the .EXAMPLE part is removed and the file is just labeled '.env'. This file will hold your SQL credentials. In .env, fill in the DB_USER and DB_PW with the credentials of your local SQL user.
+</br>To create the database for this application, create a new query within your SQL application, and execute the code located in the [db](./db/schema.sql) folder. This will create a new database named 'ecommerce_db'.</br>To create the tables within the database and seed those tables with data, go to the cloned repositoy location within your terminal. Run the following commands 'npm run start' to create the tables and 'npm run seed' to seed the tabes. The application is now ready to receive API calls.
 
 ## Usage
 
