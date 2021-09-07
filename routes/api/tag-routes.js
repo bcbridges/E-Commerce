@@ -43,12 +43,39 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-router.post("/", (req, res) => {
+router.post("/", async (req, res) => {
   // create a new tag
+  // req.body should look like
+  /*
+  {
+  "tag_name": "Luxury"
+  }
+   */
+
+  try {
+    await Tag.create({
+      tag_name: req.body.tag_name,
+    });
+    res.json("The category has been added.");
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 });
 
-router.put("/:id", (req, res) => {
+router.put("/:id", async (req, res) => {
   // update a tag's name by its `id` value
+
+  try {
+    await Tag.update(req.body, {
+      where: {
+        id: req.params.id,
+      },
+    });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
 });
 
 router.delete("/:id", (req, res) => {
