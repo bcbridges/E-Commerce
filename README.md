@@ -25,11 +25,24 @@ This project was created to demonstrate utilizing API routes to manipulate data 
 ## Installation
 
 To install this application, clone the repository locally to your desktop. Within the repository, you will find the ['.env.EXAMPLE'](.env.EXAMPLE) file. Rename the file so that the .EXAMPLE part is removed and the file is just labeled '.env'. This file will hold your SQL credentials. In .env, fill in the DB_USER and DB_PW with the credentials of your local SQL user.
-</br>To create the database for this application, create a new query within your SQL application, and execute the code located in the [db](./db/schema.sql) folder. This will create a new database named 'ecommerce_db'.</br>To create the tables within the database and seed those tables with data, go to the cloned repositoy location within your terminal. Run the following commands 'npm run start' to create the tables and 'npm run seed' to seed the tabes. The application is now ready to receive API calls.
+
+To create the database for this application, create a new query within your SQL application, and execute the code located in the [db](./db/schema.sql) folder. This will create a new database named 'ecommerce_db'.
+
+To create the tables within the database and seed those tables with data, go to the cloned repositoy location within your terminal. Run the following commands 'npm run start' to create the tables and 'npm run seed' to seed the tabes.
+
+The application is now ready to receive API calls.
 
 ## Usage
 
-Within your API testing software, you can make calls to the following: add table of call examples to the db.
+Within your API testing software, you can make calls to the following:
+
+|       Products       |      Categories       |       Tags       |
+| :------------------: | :-------------------: | :--------------: |
+|   GET All Products   |  GET All Categories   |   GET All Tags   |
+|  GET Products by ID  |  GET Category by ID   |  GET Tag by ID   |
+|   POST New Product   |   POST New Category   |   POST New Tag   |
+|  PUT Product by ID   |  PUT Category by ID   |  PUT Tag by ID   |
+| DELETE Product by ID | DELETE Category by ID | DELETE Tab by ID |
 
 Please view this video tutorial regarding the program here: https://drive.google.com/drive/folders/1ji_0KcyZmFmQtzWl23u0kIn-fTsNfRc6?usp=sharing
 
@@ -43,7 +56,7 @@ This project is licensed under the GNU General Public License v3.0.
 
 ## How to Contribute
 
-Please contact me at the email provided in the Questions section if you wish to contribute to this repository.
+If you want to contribute to this repository, please email me at bbridgesdev@gmail.com.
 
 ## Tests
 
